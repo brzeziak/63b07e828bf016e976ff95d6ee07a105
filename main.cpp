@@ -9,7 +9,7 @@
 #include "globalSettings.h"
 
 using namespace std;
-
+// huwhuwhuwhuwhuwhuwhuhwuwhuwhwuheuheue
 // inicjacja œwiata
 const int lp=7;    // liczba punktów œwiata
 int tabela[3][lp]={'a','b','c','d','e','f','g',
