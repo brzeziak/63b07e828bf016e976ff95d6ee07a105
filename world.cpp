@@ -22,8 +22,11 @@ void World::reset(){
 
 void World::decreaseFeroms()
 {
-    for(int i=0;i<lp;i++)
+    for(int i=0;i<lp;i++) {
         punkty[i].ferom -= gs_fer_reduction_per_cycle; //(punkty[i].ferom * gs_fer_reduction_per_cycle);
+        if(punkty[i].ferom < 0.f) punkty[i].ferom=0.f;
+    }
+
 }
 
 void World::pokaz(){
