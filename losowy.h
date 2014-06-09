@@ -8,6 +8,9 @@ const int mlc=100; // maksymalna liczba cykli w eksperymencie
 const int liczba_losowan=10*mlc;
 int tablica_bazowa[liczba_losowan]; int index_bazowy=0;
 
+// Patrz dopisalem te linijke jakies 18 godzin od publikacji
+// Oznaczylem ten commit jakims komentarzem i nazwa
+
 void losuj_baze(void)
 {   time_t t;
     srand((unsigned)time(&t));
