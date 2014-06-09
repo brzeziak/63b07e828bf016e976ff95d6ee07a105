@@ -1,4 +1,4 @@
-// Klasyczny algorytm mrówkowy v.1.1.0
+// Klasyczny algorytm mrï¿½wkowy v.1.1.0
 // ostatnia aktualizacja 2011-04-25
 // CopyLeft Feliks Kurp 2011
 #include <cstdlib>
@@ -10,27 +10,28 @@
 
 using namespace std;
 
-// inicjacja œwiata
-const int lp=7;    // liczba punktów œwiata
+// inicjacja ï¿½wiata
+const int lp=7;    // liczba punktï¿½w ï¿½wiata
 int tabela[3][lp]={'a','b','c','d','e','f','g',
                     6, 13,  4,  4,  8,  6,  10,
                     1,  1,  3,  5,  5,  8,  8}; 
-void inicjuj(World swiat); // inicjuje konkretny œwiat
+void inicjuj(World swiat); // inicjuje konkretny ï¿½wiat
 
 int main(int argc, char *argv[])
 {
         World swiat(gs_map_points,'a','g',gs_pathselect_points);
-        // parametry œwiata: liczba punktów, home, food,
-        //                   liczba punktów wyboru dla mrówek
+        // parametry ï¿½wiata: liczba punktï¿½w, home, food,
+        //                   liczba punktï¿½w wyboru dla mrï¿½wek
 
         for(int at=0; at<gs_attempts; at++)
         {
-            inicjuj(swiat); // inicjacja œwiata wartoœciami
-            Mrowisko m(&swiat,gs_ants,gs_fers); // parametry mrowiska: nazwa œwiata,
-            // liczba mrówek, iloœæ pozostawianego feromonu przez mrówkê
+            cout<<"-----------------------Przebieg " << at+1 << "-----------------------\n\n";
+            inicjuj(swiat); // inicjacja ï¿½wiata wartoï¿½ciami
+            Mrowisko m(&swiat,gs_ants,gs_fers); // parametry mrowiska: nazwa ï¿½wiata,
+            // liczba mrï¿½wek, iloï¿½ï¿½ pozostawianego feromonu przez mrï¿½wkï¿½
             cout<<"---------- stan poczatkowy\n";
-            m.pokaz(0);                // mrowisko - stan pocz¹tkowy
-            swiat.pokaz(); cout<<endl;// œwiat    - stan pocz¹tkowy
+            m.pokaz(0);                // mrowisko - stan poczï¿½tkowy
+            swiat.pokaz(); cout<<endl;// ï¿½wiat    - stan poczï¿½tkowy
 
             for(unsigned int i=1;i<=gs_cycles;i++){
                 cout<<"---------- "<<i<<" cykl ----------\n";
