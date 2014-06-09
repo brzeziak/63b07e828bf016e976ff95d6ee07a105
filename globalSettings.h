@@ -1,7 +1,7 @@
 #ifndef GLOBAL_H
 #define GLOBAL_H
 #include "resultsheet.h"
-
+// dunno what ima doing
 // Map points
 const int gs_map_points=7;  // do not change
 const int gs_ants = 15;     // Ants on map
