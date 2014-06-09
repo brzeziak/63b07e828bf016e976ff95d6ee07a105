@@ -26,7 +26,9 @@ void Mrowisko::WTF(bool ferom)
         if(ferom)
             myfile << _cykl << '\t' << _feroms << '\n';
         else
-            myfile << _cykl << '\t' << ant_sum << '\n';
+            if (_cykl==0)
+            myfile <<"Przebieg " << i++<< '\n';
+            myfile <<"Cykl "<< _cykl << '\t' <<"Mrowki "<< ant_sum << '\n';
 
         myfile.close();
     }

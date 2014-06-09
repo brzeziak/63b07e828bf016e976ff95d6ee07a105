@@ -25,7 +25,8 @@ int main(int argc, char *argv[])
 
         for(int at=0; at<gs_attempts; at++)
         {
-            inicjuj(swiat); // inicjacja œwiata wartoœciami
+            cout<<"-----------------------Przebieg " << at+1 << "-----------------------\n\n";
+			inicjuj(swiat); // inicjacja œwiata wartoœciami
             Mrowisko m(&swiat,gs_ants,gs_fers); // parametry mrowiska: nazwa œwiata,
             // liczba mrówek, iloœæ pozostawianego feromonu przez mrówkê
             cout<<"---------- stan poczatkowy\n";
